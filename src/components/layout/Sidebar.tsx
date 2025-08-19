@@ -14,20 +14,42 @@ const items = [
 
 const Sidebar: React.FC = () => {
   return (
-    <aside className="sidebar card">
-      <nav style={{display:'flex', flexDirection:'column', gap:8}}>
+    <aside className="sidebar card" style={{ width: 240, padding: 20 }}>
+      {/* Logo / Header */}
+      <div style={{ marginBottom: 24, fontWeight: 700, fontSize: 18, color: "var(--accent)" }}>
+        MV DIGITAL WORK
+      </div>
+
+      <nav style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
         {items.map(i => (
-          <NavLink key={i.to} to={i.to} className={({isActive}) => 'side-link' + (isActive ? ' active' : '')}>
-            <span style={{width:20, display:'inline-grid', placeItems:'center'}}>{i.icon}</span>
+          <NavLink
+            key={i.to}
+            to={i.to}
+            className={({ isActive }) =>
+              'side-link' + (isActive ? ' active' : '')
+            }
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: 12,
+              padding: '10px 12px',
+              borderRadius: 12,
+            }}
+          >
+            <span style={{ width: 20, display: 'inline-grid', placeItems: 'center' }}>
+              {i.icon}
+            </span>
             <span>{i.label}</span>
           </NavLink>
         ))}
       </nav>
 
-      <div style={{marginTop:18}} className="status">
+      {/* Footer/Status */}
+      <div style={{ marginTop: 20, fontSize: 14 }} className="status">
         <span className="dot" /> Connected
       </div>
     </aside>
   )
 }
+
 export default Sidebar
