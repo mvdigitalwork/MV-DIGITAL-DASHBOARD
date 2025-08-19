@@ -1,0 +1,22 @@
+:root{
+  --bg: #0b1020;
+  --card: #121836;
+  --text: #e7e9ee;
+  --muted: #aab2c8;
+  --accent: #64d2ff;
+  --ok: #3ddc97;
+  --warn: #ffd166;
+  --err: #ef476f;
+  --ring: rgba(100,210,255,.35);
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial;
+  background: radial-gradient(1200px 600px at 80% -10%, #1d2552 10%, transparent 60%),
+              radial-gradient(1000px 500px at -10% 20%, #1a2545 10%, transparent 60%),
+              var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
