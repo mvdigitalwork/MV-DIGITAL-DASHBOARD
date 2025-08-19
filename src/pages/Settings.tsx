@@ -18,7 +18,7 @@ const inputStyle: React.CSSProperties = {
 }
 
 const Settings: React.FC = () => (
-  <div style={{display:'grid', gap:20}}>
+  <div style={{display:'grid', gap:20, maxWidth:1000, margin:'0 auto'}}>
     <div>
       <h1 style={{marginBottom:4}}>Settings</h1>
       <p className="sub">Update your business details, preferences & account security.</p>
@@ -103,6 +103,21 @@ const Settings: React.FC = () => (
             <button className="btn">Update Password</button>
           </div>
         </div>
+      </div>
+    </div>
+
+    {/* Integrations Section */}
+    <div className="card" style={{padding:'20px 24px', display:'grid', gap:16}}>
+      <h3 style={{margin:0, fontSize:16}}>Integrations</h3>
+      <p className="sub" style={{marginTop:-6}}>Connect your business with external platforms.</p>
+      
+      <div style={{display:'grid', gap:12}}>
+        {["Google Business Profile","Instagram","Facebook","WhatsApp"].map((service) => (
+          <div key={service} style={{display:'flex', justifyContent:'space-between', alignItems:'center', padding:'10px 12px', border:'1px solid rgba(255,255,255,.08)', borderRadius:10}}>
+            <span style={{fontSize:14}}>{service}</span>
+            <button className="btn" style={{fontSize:13, padding:'6px 14px'}}>Connect</button>
+          </div>
+        ))}
       </div>
     </div>
 
