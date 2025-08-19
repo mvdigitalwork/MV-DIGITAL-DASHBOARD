@@ -72,3 +72,14 @@ code.inline{background:rgba(255,255,255,.08);padding:.2em .4em;border-radius:6px
 }
 .side-link:hover{background:rgba(255,255,255,.03); color:var(--accent)}
 .side-link.active{background:rgba(100,210,255,.08); color:var(--accent); border-color:rgba(100,210,255,.25)}
+
+
+.chip {
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
+  white-space: nowrap;
+}
