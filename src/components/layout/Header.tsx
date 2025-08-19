@@ -27,7 +27,7 @@ const Header: React.FC = () => {
           style={{
             width: 36,
             height: 36,
-            borderRadius: 12, // ✅ consistent rounded square
+            borderRadius: 12,
             background: 'linear-gradient(135deg, #64d2ff, #3ddc97)',
           }}
         />
@@ -46,7 +46,7 @@ const Header: React.FC = () => {
           placeholder="Search businesses, reviews, posts..."
           style={{
             padding: '9px 14px',
-            borderRadius: 8, // ✅ softer but uniform
+            borderRadius: 12,
             background: 'rgba(255,255,255,0.04)',
             border: '1px solid rgba(255,255,255,0.1)',
             color: 'var(--text)',
@@ -61,7 +61,7 @@ const Header: React.FC = () => {
           className="btn"
           style={{
             padding: '9px 18px',
-            borderRadius: 8, // ✅ same as input
+            borderRadius: 10,
             fontSize: 14,
             fontWeight: 500,
             background:
@@ -79,7 +79,7 @@ const Header: React.FC = () => {
             style={{
               width: 36,
               height: 36,
-              borderRadius: '50%', // ✅ avatar circle
+              borderRadius: '50%',
               background: 'var(--accent)',
               display: 'grid',
               placeItems: 'center',
